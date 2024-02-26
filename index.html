@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temporizador de tickets</title>
+</head>
+<body>
+    
+    <div class="ticket-container">
+        <div class="title">
+            <h1>Temporizador de tickets</h1>
+        </div>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="ticket">
+            <label for="ticketNumber1">INGRESE NÚMERO DE TICKET</label>
+            <input type="text" id="ticketNumber1">
+            <label for="arrivalTime1">Hora de llegada:</label>
+            <input type="time" id="arrivalTime1">
+            <button class="start-timer" onclick="startTimer(1)">Iniciar</button>
+            <button class="stop-timer" onclick="stopTimer(1)">Detener</button>
+            <div class="timer">Tiempo: <span id="countdown1">--:--</span></div>
+        </div>
+
+        <div class="ticket">
+            <label for="ticketNumber2">INGRESE NÚMERO DE TICKET</label>
+            <input type="text" id="ticketNumber2">
+            <label for="arrivalTime2">Hora de llegada:</label>
+            <input type="time" id="arrivalTime2">
+            <button class="start-timer" onclick="startTimer(2)">Iniciar</button>
+            <button class="stop-timer" onclick="stopTimer(2)">Detener</button>
+            <div class="timer">Tiempo: <span id="countdown2">--:--</span></div>
+        </div>
+
+        <div class="ticket">
+            <label for="ticketNumber3">INGRESE NÚMERO DE TICKET</label>
+            <input type="text" id="ticketNumber3">
+            <label for="arrivalTime3">Hora de llegada:</label>
+            <input type="time" id="arrivalTime3">
+            <button class="start-timer" onclick="startTimer(3)">Iniciar</button>
+            <button class="stop-timer" onclick="stopTimer(3)">Detener</button>
+            <div class="timer">Tiempo:<span id="countdown3">--:--</span></div>
+        </div>
+
+        <footer>
+            <p>&copy; Markuituz 2024</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
